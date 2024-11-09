@@ -1,0 +1,208 @@
+/* @font-face {
+    font-family: fonts;
+    src: url(../Rubik/static/Rubik-Medium.ttf);
+}
+body {
+    font-weight: fonts;
+} */
+
+/* start left side */
+:root {
+    --light-color: #f1f1f1;
+    --dark-color: #616161;
+}
+.project .left-side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    /* margin-left: -12px; */
+    background-image: url(../imgs/profile_girl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* end left side */
+/* start section */
+.project section .landing {
+    /* height: 75vh; */
+    /* background-color: antiquewhite; */
+    padding: 150px 0;
+}
+button:hover {
+    background-color: #888888;
+}
+.project section .landing div img {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.project section .landing h1 {
+    font-size: 70px;
+}
+.project section .about p:last-child {
+    font-size: 16.6px;
+}
+.project section .skills div:not(div:first-child) p {
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-size: 17px;
+} 
+.project section .skills div:not(div:first-child) .parent {
+    background-color: var(--light-color);
+    height: 30px;
+}
+.project section .skills div:not(div:first-child) .parent .child {
+    height: 100%;
+    width: calc(100% * var(--i) );
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.project section .parts {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 20px;
+    padding: 30px 0 20px 0;
+}
+.project section .parts .row div p:first-child {
+    font-weight: 500;
+}
+.project section .reputation .parent .img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.price .tables .table1 table thead tr td {
+    background-color: var(--dark-color);
+    color: white;
+    height: 90px;
+}
+.price .tables .table2 table thead tr td {
+    background-color: black;
+    color: white;
+    height: 90px;
+}
+.price .tables table tbody tr td {
+    height: 60px;
+    border-bottom: 1px #ddd solid;
+} 
+.price .tables table tfoot tr td {
+    height: 80px;
+    background-color: var(--light-color);
+}
+.price .tables table tfoot tr td button {
+    padding: 10px 25px;
+    background-color: white;
+    border: none;
+}
+.price .tables table tfoot tr td button:hover {
+    background-color: black;
+    color: white;
+}
+.price .tables table {
+    box-shadow:  0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.price .tables table:hover {
+    box-shadow:  0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 13px 0 rgba(0, 0, 0, 0.2);
+}
+.contact .contact-me span {
+    left: 60px;
+    top: 3px;
+}
+.map img {
+    filter: grayscale(75%);
+    -webkit-filter: grayscale(75%);
+}
+form input {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    height: 50px;
+}
+form input:focus {
+    box-shadow: none !important;
+    border: 1px var(--light-color) solid !important;
+    outline: 1px black solid !important;
+}
+footer {
+    /* height: 150px;  */
+    /* background-color: var(--light-color); */
+}
+footer .link a {
+    color: #888888;
+}
+footer .link a:hover {
+    color: #a4a4a4 !important;
+}
+footer div:last-child {
+    background-color: var(--light-color) ;
+    height: 150px;
+}
+
+.right-side {
+    
+    top: 0;
+    background-color: #000000;
+    width: 300px;
+    right: -100%;
+    height: 100vh;
+    z-index: 10;
+    /* z-index: 10; */
+}
+.right-side label {
+    top: -194px;
+    right: -118px;
+    padding: 7px 20px;
+    background-color: #888888;
+    font-size: 30px;
+}
+.right-side div {
+    height: 60px;
+    font-size: 40px;
+}
+.right-side div a {
+    color: #a4a4a4;
+}
+.right-side div a:hover {
+    color: white;
+}
+.right-side label:hover {
+    background-color: #ffff;
+    cursor: pointer;
+}
+
+.bars {
+    top: 55px;
+    right: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #888888;
+    background-color: white;
+    z-index: 10;
+}
+.bars:hover {
+    background-color: var(--light-color);
+    color: black;
+}
+.bars:hover {
+    cursor: pointer;
+}
+section>div>input[type="checkbox"]:checked~.right-side {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    right: 0;
+}
+/* .project section .price .tables table:last-child thead tr td {
+} */
+/* end section */
